@@ -76,9 +76,11 @@ module.exports = function ipcEvents(win) {
                     return false
                 }
                 selectedPath = filePaths[0]
+                saveFile(selectedPath, value, event)
             })
+        } else {
+            saveFile(selectedPath, value, event)
         }
-        saveFile(selectedPath, value, event)
     })
 
     ipcMain.on(IPC_LOAD_HISTORY, (event) => {
