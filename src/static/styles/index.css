@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    min-height: 100vh;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;;
+    line-height: 1.5;
+    color: #222;
+}
+
+textarea {
+    color: #333;
+    font-size: 1rem;
+    font-family: Consolas,'Courier New',monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-25 {
+    width: 25%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.px-5 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.pt-5 {
+    padding-top: 2.5rem;
+}
+.pl-3 {
+    padding-left: 1.5rem;
+}
+.py-1 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.px-1 {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.float-left {
+    float: left;
+}
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.border {
+    border: 1px solid #DDD;
+}
+
+.border-right {
+    border-right: 1px solid #DDD;
+}
+.border-bottom {
+    border-bottom: 1px solid #DDD;
+}
+.text-normal {
+    font-weight: normal;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+.list-style-none {
+    list-style: none;
+}
+
+.bg-light {
+    background-color: #EEE;
+}
+
+.bg-grey {
+    background-color: #DDD;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-dark-50 {
+    color: #888;
+}
+
+.font-small {
+    font-size: .8rem;
+}
+
+.font-lg {
+    font-size: 1.3rem;
+}
+
+.tab {
+    padding: .4rem 0 .4rem 1rem;
+}
+
+.side-list:hover {
+    background-color: #fff;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/index.css" />
+
+    <style>
+        .menu {
+            min-height: 100vh;
+            min-width: 150px;
+            max-width: 220px;
+        }
+        #tavs-tab {
+            min-height: 34px;
+        }
+    </style>
+
+    <title>Electron Editor</title>
+</head>
+<body class="d-flex">
+    <div class="menu font-small w-25 bg-light">
+        <div class="text-dark-50 pl-3 py-1">资源管理器</div>
+        <a class="d-block bg-grey pl-3" href="#">打开的文件</a>
+        <ul id="files-ul">
+
+        </ul>
+    </div>
+    <div class="w-100 d-flex flex-column">
+        <ul id="tavs-tab" class="d-block w-100 float-left border">
+            <!-- li -->
+        </ul>
+        <div id="work-space" class="d-block w-100 h-100">
+    
+        </div>
+    </div>
+
+    <script>
+        require('../renderer/index.js')
+    </script>
+</body>
+</html>

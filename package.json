@@ -1,0 +1,48 @@
+{
+  "name": "electron-app",
+  "version": "0.1.0",
+  "description": "Test electron",
+  "main": "src/main/index.js",
+  "scripts": {
+    "dev": "electron .",
+    "dist": "cross-env NODE_ENV=production electron-builder",
+    "test": "mocha"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "electron-updater": "^4.2.5",
+    "graceful-fs": "^4.2.3",
+    "jquery": "^3.4.1",
+    "update-electron-app": "^1.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cross-env": "^7.0.2",
+    "electron": "^8.2.0",
+    "electron-builder": "^22.4.1",
+    "mocha": "^7.1.1",
+    "spectron": "^10.0.1"
+  },
+  "build": {
+    "appId": "04c4a930-5707-407c-80c9-8e692bb11e12",
+    "productName": "native-test",
+    "publish": {
+      "provider": "generic",
+      "url": "http://127.0.0.1:8080/"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "runAfterFinish": false
+    }
+  }
+}
